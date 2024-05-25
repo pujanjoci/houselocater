@@ -8,6 +8,7 @@ const LoginForm = () => {
   const [fullName, setFullName] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+  const [showPopup, setShowPopup] = useState(false);
 
   const toggleForm = () => {
     setIsLoginForm(!isLoginForm);
@@ -20,6 +21,10 @@ const LoginForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    // Assume values are verified here
+    setShowPopup(true);
+    // Clear popup after a few seconds
+    setTimeout(() => setShowPopup(false), 3000);
   };
 
   return (
@@ -140,6 +145,16 @@ const LoginForm = () => {
             </button>
           </div>
         </form>
+        {showPopup && (
+          <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-gray-800 bg-opacity-50">
+            <div className="bg-white p-6 rounded shadow-lg">
+              <p className="text-lg items-center justify-center">{isLoginForm ? 'Logged in successfully!' : 'Signed up successfully!'}</p>
+              <button onClick={() => setShowPopup(false)} className="mt-4 px-4 py-2 bg-green-600 text-white rounded hover:bg-indigo-400">
+                Close
+              </button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

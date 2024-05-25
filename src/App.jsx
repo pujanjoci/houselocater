@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import SearchDisplay from './components/SearchDisplay';
 import LoginForm from './components/LoginForm';
 import Info from './components/Info';
@@ -58,7 +59,7 @@ function App() {
                                 <section id="about">
                                     <About />
                                 </section>
-                                <section id="contact" className="mt-8">
+                                <section id="contact" className="mt-4">
                                     <Contact/>
                                 </section>
                             </>
@@ -68,6 +69,9 @@ function App() {
                     <Route path="/link/:id" element={<Info />} />
                 </Routes>
             </main>
+        <section id="footer">
+            <Footer/>
+        </section>
         </Router>
     );
 }

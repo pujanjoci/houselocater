@@ -31,11 +31,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-white flex items-center justify-center p-4">
       <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-4xl w-full grid grid-cols-1 md:grid-cols-2">
-        <div className="p-8 bg-blue-500 text-white justify-center items-center">
-          <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-          <p className="mb-2">1234 Street Name</p>
+        <div className="p-8 bg-blue-500 text-white text-center justify-center items-center">
+          <h2 className="text-2xl font-bold md:mt-32 mb-4">Contact Information</h2>
+          <p className="mb-2">Kathmandu, Bagmati</p>
           <p className="mb-2">City, State, ZIP</p>
           <p className="mb-2">Phone: (123) 456-7890</p>
           <p>Email: contact@example.com</p>

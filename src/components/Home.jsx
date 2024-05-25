@@ -15,7 +15,7 @@ const Home = ({ homes, onSearchInitiated }) => {
 
     return (
         <div>
-            <main className="bg-gray-100 min-h-screen">
+            <main className="bg-white min-h-screen">
                 <section className="bg-white py-12">
                     <div className="container mx-auto text-center">
                         <h1 className="text-4xl font-bold mb-4">Find Your Dream Home</h1>
