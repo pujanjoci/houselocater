@@ -15,7 +15,7 @@ House-Locater is a modern, responsive e-commerce site designed to help users buy
 
 ## Demo
 
-Check out the live demo of House-Locater: [pujanjoci.github.io/houselocater](#)
+Check out the live demo of House-Locater: [(https://pujanjoci.github.io/houselocater/)](#)
 
 ## Features
 
