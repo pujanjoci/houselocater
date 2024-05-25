@@ -1,0 +1,294 @@
+{
+  "homes": [
+    {
+      "id": 1,
+      "title": "Spacious Family Home",
+      "description": "A beautiful and spacious family home located in a quiet neighborhood.",
+      "price": 350000,
+      "location": {
+        "address": "Srijananagar",
+        "city": "Bhaktapur",
+        "state": "Bagmati",
+        "zip": "62704",
+        "coordinates": {
+          "latitude": 39.7817,
+          "longitude": -89.6501
+        }
+      },
+      "details": {
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "area": "2500 sq ft",
+        "type": "Single Family Home",
+        "yearBuilt": 2015
+      },
+      "amenities": ["Garage", "Swimming Pool", "Fireplace", "Central Air Conditioning"],
+      "agent": {
+        "name": "John Doe",
+        "phone": "555-123-4567",
+        "email": "john.doe@example.com"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 3,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 4,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 5,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 6,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 7,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 8,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+        {
+      "id": 9,
+      "title": "Modern Apartment",
+      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "price": 450000,
+      "location": {
+        "address": "456 Oak Avenue",
+        "city": "Metropolis",
+        "state": "NY",
+        "zip": "10001",
+        "coordinates": {
+          "latitude": 40.7128,
+          "longitude": -74.0060
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1200 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@example.com"
+      }
+    },
+    {
+      "id": 10,
+      "title": "Cozy Cottage",
+      "description": "A cozy cottage perfect for a small family or as a vacation home.",
+      "price": 200000,
+      "location": {
+        "address": "Suryabinayak",
+        "city": "Bhaktapur",
+        "state": "Bagmati",
+        "zip": "49651",
+        "coordinates": {
+          "latitude": 43.4180,
+          "longitude": -85.2601
+        }
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 1.5,
+        "area": "1500 sq ft",
+        "type": "Cottage",
+        "yearBuilt": 1980
+      },
+      "amenities": ["Garden", "Wood Stove", "Patio", "Central Heating"],
+      "agent": {
+        "name": "Bob Johnson",
+        "phone": "555-555-5555",
+        "email": "bob.johnson@example.com"
+      }
+    }
+  ]
+}
