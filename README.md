@@ -24,15 +24,11 @@ Check out the live demo of House-Locater: [pujanjoci.github.io/houselocater](#)
 - Property listing with detailed descriptions and images
 - Search functionality to find houses by various criteria
 - Contact forms for inquiries
-- User dashboard for managing listings and personal details
-- Integration with maps for property location
 
 ## Technologies Used
 
-- **Frontend**: React, Vite, Tailwind CSS
-- **Backend**: Node.js (Express)
-- **Database**: MongoDB
-- **Authentication**: JWT (JSON Web Tokens)
+- **Frontend**: React, Vite, JS, Tailwind CSS
+- **Data**: JSON 
 
 ## Installation
 
@@ -49,10 +45,9 @@ To run this project locally, follow these steps:
     npm install
     ```
 
-3. **Set up environment variables**:
-    Create a `.env` file in the root directory and add your environment variables. For example:
+3. **Modify the existing json file or you can use api**:
     ```env
-    REACT_APP_API_URL=http://localhost:5000/api
+    modify the HomeLocation.json file for including more locations
     ```
 
 4. **Run the development server**:
@@ -67,8 +62,8 @@ To run this project locally, follow these steps:
 
 - **View Listings**: Browse through the available house listings.
 - **Search**: Use the search bar to find specific properties based on location, price, and other criteria.
-- **User Account**: Sign up or log in to manage your listings, contact sellers, and more.
-- **Create Listings**: As a registered user, you can create new property listings.
+- **User Account**: Sign up or log in to manage your listings, contact sellers, and more.(It is still in working)
+- **Form Submission*: Form Sumbission is done through formspree but you can use any form sumbition tool.
 
 ## Contributing
 
@@ -85,7 +80,7 @@ Contributions are welcome! To contribute, please follow these steps:
 
 Developed by [Pujan Joshi](https://pujan-joshi.com.np). 
 
-- Email: pujanjoci2@gmail.com
+- Email: pujanjoci01@gmail.com
 - LinkedIn: [Pujan Joshi]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/pujan-joshi-b811071a1/)
 - GitHub: [Pujan Joshi](https://github.com/pujanjoci)
 
