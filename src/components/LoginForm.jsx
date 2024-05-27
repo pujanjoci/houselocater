@@ -130,7 +130,7 @@ const LoginForm = () => {
             </div>
 
             <div className="text-sm">
-              <button type="button" onClick={toggleForm} className="font-medium text-indigo-600 hover:text-indigo-500">
+              <button type="button" onClick={toggleForm} className="font-medium text-indigo-600 hover:text-indigo-500 hover:underline">
                 {isLoginForm ? 'Sign Up' : 'Login'}
               </button>
             </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import About from './components/About';
@@ -10,7 +10,7 @@ import LoginForm from './components/LoginForm';
 import Info from './components/Info';
 import homeData from './components/HomeLocation.json';
 
-function App() {
+const App = () => {
     const [isSearchInitiated, setIsSearchInitiated] = useState(false);
     const [homes, setHomes] = useState([]);
     const [searchResults, setSearchResults] = useState([]);
@@ -45,35 +45,51 @@ function App() {
 
     return (
         <Router basename="/houselocater">
-            <Header onSearchInitiated={handleLinkClick} />
-            <main className="container mx-auto p-4">
-                <Routes>
-                    <Route path="/" element={
-                        isSearchInitiated ? (
-                            <SearchDisplay results={searchResults} keywords={searchQuery} />
-                        ) : (
-                            <>
-                                <section id="home">
-                                    <Home homes={homes} onSearchInitiated={handleSearch} />
-                                </section>
-                                <section id="about">
-                                    <About />
-                                </section>
-                                <section id="contact" className="mt-4">
-                                    <Contact/>
-                                </section>
-                            </>
-                        )
-                    } />
-                    <Route path="/login" element={<LoginForm />} />
-                    <Route path="/link/:id" element={<Info />} />
-                </Routes>
-            </main>
-        <section id="footer">
-            <Footer/>
-        </section>
+            <div className="flex flex-col min-h-screen">
+                <Header onSearchInitiated={handleLinkClick} />
+                <main className="container mx-auto p-4 flex-grow">
+                    <Routes>
+                        <Route path="/" element={
+                            isSearchInitiated ? (
+                                <SearchDisplay results={searchResults} keywords={searchQuery} />
+                            ) : (
+                                <>
+                                    <section id="home">
+                                        <Home homes={homes} onSearchInitiated={handleSearch} />
+                                    </section>
+                                    <section id="about">
+                                        <About />
+                                    </section>
+                                    <section id="contact" className="mt-4">
+                                        <Contact />
+                                    </section>
+                                </>
+                            )
+                        } />
+                        <Route path="/login" element={<LoginForm />} />
+                        <Route path="/link/:id" element={<Info />} />
+                    </Routes>
+                </main>
+                <ConditionalFooter />
+            </div>
         </Router>
     );
-}
+};
+
+const ConditionalFooter = () => {
+    const location = useLocation();
+
+    // Define paths where footer should not be displayed
+    const noFooterPaths = ['/searchdisplay', '/link'];
+
+    // Check if current path matches any path in the noFooterPaths array
+    const shouldDisplayFooter = !noFooterPaths.some(path => location.pathname.startsWith(path));
+
+    return shouldDisplayFooter ? (
+        <footer className="bg-gray-800 text-white py-4">
+            <Footer />
+        </footer>
+    ) : null;
+};
 
 export default App;

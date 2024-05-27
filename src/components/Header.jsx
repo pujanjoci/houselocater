@@ -39,7 +39,11 @@ const Header = ({ onSearchInitiated, isLoginPage }) => {
     return (
         <header className="bg-white text-gray-800 p-4">
             <nav className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-                <div className="text-xl font-bold md:col-span-1">House-Locater</div>
+                <div className="text-xl font-bold md:col-span-1">
+                    <Link to="/" onClick={() => handleLinkClick('home')}>
+                        House-Locater
+                    </Link>
+                </div>
                 <div className="hidden md:flex space-x-10 justify-center md:col-span-1">
                     <Link to="/" className="hover:underline" onClick={() => handleLinkClick('home')}>Home</Link>
                     <Link to="/" className="hover:underline" onClick={() => handleLinkClick('about')}>About</Link>

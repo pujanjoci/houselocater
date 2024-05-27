@@ -83,7 +83,7 @@ const Info = () => {
             {showBuyPopup && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="bg-white p-4 rounded-md shadow-md">
-                        <p>You'd like to buy this house. Please contact us.</p>
+                        <p>You have to be logged in to buy this, or you can contact us.</p>
                         <button className="bg-blue-500 text-white hover:bg-blue-400 px-4 py-2 rounded-md" onClick={() => setShowBuyPopup(false)}>Close</button>
                     </div>
                 </div>
@@ -92,7 +92,7 @@ const Info = () => {
             {showReservePopup && (
                 <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center">
                     <div className="bg-white p-4 rounded-md shadow-md">
-                        <p>You have reserved this property. Please contact us.</p>
+                        <p>You have to be logged in to reserve.</p>
                         <button className="bg-green-500 text-white hover:bg-green-400 px-4 py-2 rounded-md" onClick={() => setShowReservePopup(false)}>Close</button>
                     </div>
                 </div>
