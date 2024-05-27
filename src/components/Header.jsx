@@ -37,7 +37,7 @@ const Header = ({ onSearchInitiated, isLoginPage }) => {
     };
 
     return (
-        <header className="bg-blue-600 text-white p-4">
+        <header className="bg-white text-gray-800 p-4">
             <nav className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <div className="text-xl font-bold md:col-span-1">House-Locater</div>
                 <div className="hidden md:flex space-x-10 justify-center md:col-span-1">
@@ -45,18 +45,18 @@ const Header = ({ onSearchInitiated, isLoginPage }) => {
                     <Link to="/" className="hover:underline" onClick={() => handleLinkClick('about')}>About</Link>
                     <Link to="/" className="hover:underline" onClick={() => handleLinkClick('contact')}>Contact</Link>
                 </div>
-                <div className="relative flex items-center justify-end md:col-span-1">
-                    {!isLoginPage && (
-                        <div className="hidden md:block relative">
-                            <Link to="/login" className='text-gray-200 hover:text-gray-300 hover:underline cursor-pointer'>Login..|Sign-in</Link>
-                        </div>
-                    )}
-                    <div className="md:hidden ml-2">
-                        <button onClick={toggleMenu} className="focus:outline-none">
-                            {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-                        </button>
+            <div className="relative flex items-center justify-end md:col-span-1">
+                {!isLoginPage && (
+                    <div className="hidden md:flex space-x-4">
+                        <Link to="/login" className='text-gray-600 hover:text-gray-400 hover:underline cursor-pointer'>Login</Link>
                     </div>
+                )}
+                <div className="md:hidden ml-2">
+                    <button onClick={toggleMenu} className="focus:outline-none">
+                        {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
+                    </button>
                 </div>
+            </div>
             </nav>
             {isMenuOpen && (
                 <div ref={menuRef} className="md:hidden bg-blue-600 text-white p-4 absolute top-15 left-0 w-full z-10">

@@ -35,9 +35,9 @@
       "description": "A modern apartment with stunning city views and luxurious amenities.",
       "price": 450000,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "kanaswara",
+        "city": "Pokhara",
+        "state": "Gandaki",
         "zip": "10001",
         "coordinates": {
           "latitude": 40.7128,
@@ -64,9 +64,9 @@
       "description": "A modern apartment with stunning city views and luxurious amenities.",
       "price": 450000,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Nikosera",
+        "city": "Bhaktapur",
+        "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
           "latitude": 40.7128,
@@ -93,9 +93,9 @@
       "description": "A modern apartment with stunning city views and luxurious amenities.",
       "price": 450000,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Purano-Baneshowr",
+        "city": "Kathmandu",
+        "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
           "latitude": 40.7128,
@@ -122,9 +122,9 @@
       "description": "A modern apartment with stunning city views and luxurious amenities.",
       "price": 450000,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Indrapur",
+        "city": "Nepalgunj",
+        "state": "Banke",
         "zip": "10001",
         "coordinates": {
           "latitude": 40.7128,
@@ -151,9 +151,9 @@
       "description": "A modern apartment with stunning city views and luxurious amenities.",
       "price": 450000,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Lakhanpur",
+        "city": "Damak",
+        "state": "Jhapa",
         "zip": "10001",
         "coordinates": {
           "latitude": 40.7128,
@@ -180,9 +180,9 @@
       "description": "A modern apartment with stunning city views and luxurious amenities.",
       "price": 450000,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Koteshoer",
+        "city": "Kathmandu",
+        "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
           "latitude": 40.7128,
