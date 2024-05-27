@@ -31,7 +31,7 @@ const Home = ({ homes, onSearchInitiated }) => {
     };
 
     return (
-        <div>
+        <div className='mt-[-2%]'>
             <main className="bg-white min-h-screen">
                 <section className="bg-white py-12">
                     <div className="container mx-auto text-center">
@@ -43,7 +43,7 @@ const Home = ({ homes, onSearchInitiated }) => {
                         <div className="relative max-w-lg mx-auto">
                             <input
                                 type="text"
-                                className="w-full p-4 rounded-lg border border-gray-300 shadow-lg"
+                                className="w-full p-4 rounded-xl border border-gray-300 shadow-lg"
                                 placeholder="Search locations..."
                                 value={keywords}
                                 onChange={handleInputChange}
@@ -79,7 +79,7 @@ const Home = ({ homes, onSearchInitiated }) => {
                     </div>
                 </section>
 
-                <section className="py-10">
+                <section className="py-10 mt-[-3%]">
                     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 text-center">
                         <div className="bg-white p-6 rounded-lg shadow-xl">
                             <h2 className="text-2xl font-bold mb-4">Wide Range of Listings</h2>
@@ -96,7 +96,7 @@ const Home = ({ homes, onSearchInitiated }) => {
                     </div>
                 </section>
 
-                <section className="bg-blue-300 py-12 text-gray-800 rounded-md shadow-lg">
+                <section className="bg-blue-300 py-12 text-gray-800 rounded-xl shadow-lg">
                     <div className="container mx-auto text-center">
                         <h2 className="text-3xl font-bold mb-4">Ready to Find Your New Home?</h2>
                         <p className="mb-8">Sign up today and start your search with Home Finder.</p>

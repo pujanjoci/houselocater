@@ -44,7 +44,7 @@ const App = () => {
     };
 
     return (
-        <Router basename="/houselocater">
+        <Router basename="/houselocater/">
             <div className="flex flex-col min-h-screen">
                 <Header onSearchInitiated={handleLinkClick} />
                 <main className="container mx-auto p-4 flex-grow">
