@@ -5,8 +5,8 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import PrivacyPolicy from './components/PrivacyPolicy';  // New Privacy Policy import
 import SearchDisplay from './components/SearchDisplay';
-// Updated import from LoginForm to AuthForm
 import AuthForm from './components/AuthForm';
 import Info from './components/Info';
 import homeData from './components/HomeLocation.json';
@@ -45,7 +45,7 @@ const App = () => {
     };
 
     return (
-        <Router basename="/houselocater/">
+        <Router basename="/houselocater">
             <div className="flex flex-col min-h-screen">
                 <Header onSearchInitiated={handleLinkClick} />
                 <main className="container mx-auto p-4 flex-grow">
@@ -58,16 +58,14 @@ const App = () => {
                                     <section id="home">
                                         <Home homes={homes} onSearchInitiated={handleSearch} />
                                     </section>
-                                    <section id="about">
-                                        <About />
-                                    </section>
-                                    <section id="contact" className="mt-4">
-                                        <Contact />
-                                    </section>
                                 </>
                             )
                         } />
-                        {/* Updated to use AuthForm instead of LoginForm */}
+                        {/* New Routes for About, Contact, Privacy Policy */}
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                        <Route path="/policy" element={<PrivacyPolicy />} />
+                        
                         <Route path="/login" element={<AuthForm />} />
                         <Route path="/link/:id" element={<Info />} />
                     </Routes>
