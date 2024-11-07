@@ -6,7 +6,8 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SearchDisplay from './components/SearchDisplay';
-import LoginForm from './components/LoginForm';
+// Updated import from LoginForm to AuthForm
+import AuthForm from './components/AuthForm';
 import Info from './components/Info';
 import homeData from './components/HomeLocation.json';
 
@@ -66,7 +67,8 @@ const App = () => {
                                 </>
                             )
                         } />
-                        <Route path="/login" element={<LoginForm />} />
+                        {/* Updated to use AuthForm instead of LoginForm */}
+                        <Route path="/login" element={<AuthForm />} />
                         <Route path="/link/:id" element={<Info />} />
                     </Routes>
                 </main>
