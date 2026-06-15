@@ -3,51 +3,55 @@
     {
       "id": 1,
       "title": "Spacious Family Home",
-      "description": "A beautiful and spacious family home located in a quiet neighborhood.",
+      "description": "A beautiful and spacious family home located in a quiet neighborhood. Perfect for growing families looking for comfort and a large backyard.",
       "price": 350000,
+      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
         "address": "Srijananagar",
         "city": "Bhaktapur",
         "state": "Bagmati",
         "zip": "62704",
         "coordinates": {
-          "latitude": 39.7817,
-          "longitude": -89.6501
+          "latitude": 27.6710,
+          "longitude": 85.4298
         }
       },
       "details": {
         "bedrooms": 4,
         "bathrooms": 3,
-        "area": "2500 sq ft",
-        "type": "Single Family Home",
+        "area": "2,500 sq ft",
+        "type": "House",
         "yearBuilt": 2015
       },
-      "amenities": ["Garage", "Swimming Pool", "Fireplace", "Central Air Conditioning"],
+      "amenities": ["Garage", "Swimming Pool", "Fireplace", "Central Air"],
       "agent": {
         "name": "John Doe",
         "phone": "555-123-4567",
-        "email": "john.doe@example.com"
+        "email": "john.doe@houselocater.com"
       }
     },
     {
       "id": 2,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
+      "title": "Modern City Apartment",
+      "description": "A modern apartment with stunning mountain views and luxurious amenities, located right in the heart of the scenic lakeside town.",
       "price": 450000,
+      "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
-        "address": "kanaswara",
+        "address": "Kanaswara",
         "city": "Pokhara",
         "state": "Gandaki",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 28.2096,
+          "longitude": 83.9856
         }
       },
       "details": {
         "bedrooms": 2,
         "bathrooms": 2,
-        "area": "1200 sq ft",
+        "area": "1,200 sq ft",
         "type": "Apartment",
         "yearBuilt": 2020
       },
@@ -55,239 +59,441 @@
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 3,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Luxury Penthouse Suite",
+      "description": "A luxury high-rise penthouse suite offering breathtaking panoramic city views, modern smart-home features, and top-of-the-line finishes.",
+      "price": 780000,
+      "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+      "isNew": true,
       "location": {
         "address": "Nikosera",
         "city": "Bhaktapur",
         "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 27.6784,
+          "longitude": 85.4095
         }
       },
       "details": {
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "area": "1200 sq ft",
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "area": "2,800 sq ft",
         "type": "Apartment",
-        "yearBuilt": 2020
+        "yearBuilt": 2022
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Gym", "Private Lift", "24/7 Security", "Central Heating", "Smart Lock"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 4,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Elegant Urban Loft",
+      "description": "A bright and elegant loft space featuring high ceilings, exposed brick walls, and massive windows letting in abundant natural light.",
+      "price": 290000,
+      "image": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
         "address": "Purano-Baneshowr",
         "city": "Kathmandu",
         "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 27.6993,
+          "longitude": 85.3438
         }
       },
       "details": {
         "bedrooms": 2,
         "bathrooms": 2,
-        "area": "1200 sq ft",
+        "area": "1,400 sq ft",
         "type": "Apartment",
-        "yearBuilt": 2020
+        "yearBuilt": 2018
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Gym", "High Ceilings", "Doorman", "Central Air"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 5,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Minimalist Townhouse",
+      "description": "A clean, modern townhouse designed with Japanese minimalist principles. Compact, highly efficient, and features a beautiful Zen garden.",
+      "price": 185000,
+      "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
         "address": "Indrapur",
         "city": "Nepalgunj",
         "state": "Banke",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 28.0500,
+          "longitude": 81.6167
         }
       },
       "details": {
         "bedrooms": 2,
-        "bathrooms": 2,
-        "area": "1200 sq ft",
-        "type": "Apartment",
-        "yearBuilt": 2020
+        "bathrooms": 1.5,
+        "area": "1,150 sq ft",
+        "type": "Townhouse",
+        "yearBuilt": 2021
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Zen Garden", "Energy Efficient", "Car Port", "Storage Space"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 6,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Charming Lakeview Villa",
+      "description": "A stunning luxury villa offering private lake access, beautifully manicured grounds, and custom handcrafted woodwork throughout.",
+      "price": 520000,
+      "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
         "address": "Lakhanpur",
         "city": "Damak",
         "state": "Jhapa",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 26.6667,
+          "longitude": 87.6833
         }
       },
       "details": {
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "area": "1200 sq ft",
-        "type": "Apartment",
-        "yearBuilt": 2020
+        "bedrooms": 4,
+        "bathrooms": 3.5,
+        "area": "3,200 sq ft",
+        "type": "Villa",
+        "yearBuilt": 2019
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Lakefront", "Gym", "Wrap-around Deck", "Home Office"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 7,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Sunny Suburban Retreat",
+      "description": "A warm and inviting single-story retreat with high windows, an open floor plan, and a spacious wooden deck perfect for sunset BBQs.",
+      "price": 310000,
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
-        "address": "Koteshoer",
+        "address": "Koteshwor",
         "city": "Kathmandu",
         "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 27.6766,
+          "longitude": 85.3503
         }
       },
       "details": {
-        "bedrooms": 2,
+        "bedrooms": 3,
         "bathrooms": 2,
-        "area": "1200 sq ft",
-        "type": "Apartment",
-        "yearBuilt": 2020
+        "area": "1,900 sq ft",
+        "type": "House",
+        "yearBuilt": 2012
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Wooden Deck", "Central Heating", "Garage", "Lawn Sprinkler"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 8,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Contemporary Glass House",
+      "description": "An architectural marvel featuring floor-to-ceiling glass walls, sleek structural steel accents, and panoramic views of the surrounding hills.",
+      "price": 950000,
+      "image": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+      "isNew": true,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Mid-Hill Estate",
+        "city": "Kathmandu",
+        "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 27.7172,
+          "longitude": 85.3240
         }
       },
       "details": {
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "area": "1200 sq ft",
-        "type": "Apartment",
-        "yearBuilt": 2020
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "area": "4,100 sq ft",
+        "type": "Villa",
+        "yearBuilt": 2023
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Infinity Pool", "Wine Cellar", "Solar Panels", "Smart System"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
-        {
+    {
       "id": 9,
-      "title": "Modern Apartment",
-      "description": "A modern apartment with stunning city views and luxurious amenities.",
-      "price": 450000,
+      "title": "Premium Golf Course Estate",
+      "description": "An opulent estate bordering a premier golf course, boasting an expansive master suite, premium kitchen appliances, and professional security.",
+      "price": 1200000,
+      "image": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
-        "address": "456 Oak Avenue",
-        "city": "Metropolis",
-        "state": "NY",
+        "address": "Golf Course Road",
+        "city": "Kathmandu",
+        "state": "Bagmati",
         "zip": "10001",
         "coordinates": {
-          "latitude": 40.7128,
-          "longitude": -74.0060
+          "latitude": 27.6895,
+          "longitude": 85.3684
         }
       },
       "details": {
-        "bedrooms": 2,
-        "bathrooms": 2,
-        "area": "1200 sq ft",
-        "type": "Apartment",
-        "yearBuilt": 2020
+        "bedrooms": 5,
+        "bathrooms": 6,
+        "area": "5,500 sq ft",
+        "type": "Villa",
+        "yearBuilt": 2021
       },
-      "amenities": ["Gym", "Roof Deck", "Doorman", "Central Heating"],
+      "amenities": ["Golf Access", "Home Theater", "Infinity Pool", "Guest House"],
       "agent": {
         "name": "Jane Smith",
         "phone": "555-987-6543",
-        "email": "jane.smith@example.com"
+        "email": "jane.smith@houselocater.com"
       }
     },
     {
       "id": 10,
-      "title": "Cozy Cottage",
-      "description": "A cozy cottage perfect for a small family or as a vacation home.",
+      "title": "Cozy Forest Cottage",
+      "description": "A secluded wood cottage tucked into the pine woods of Suryabinayak. Charming, rustic feel with all modern utilities and stone fireplace.",
       "price": 200000,
+      "image": "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
       "location": {
-        "address": "Suryabinayak",
+        "address": "Suryabinayak Forest",
         "city": "Bhaktapur",
         "state": "Bagmati",
         "zip": "49651",
         "coordinates": {
-          "latitude": 43.4180,
-          "longitude": -85.2601
+          "latitude": 27.6496,
+          "longitude": 85.4227
         }
       },
       "details": {
         "bedrooms": 3,
         "bathrooms": 1.5,
-        "area": "1500 sq ft",
+        "area": "1,500 sq ft",
         "type": "Cottage",
-        "yearBuilt": 1980
+        "yearBuilt": 1995
       },
-      "amenities": ["Garden", "Wood Stove", "Patio", "Central Heating"],
+      "amenities": ["Stone Fireplace", "Wood Stove", "Outdoor Patio", "Forest Views"],
       "agent": {
         "name": "Bob Johnson",
         "phone": "555-555-5555",
-        "email": "bob.johnson@example.com"
+        "email": "bob.johnson@houselocater.com"
+      }
+    },
+    {
+      "id": 11,
+      "title": "Traditional Newar Villa",
+      "description": "A beautifully preserved traditional duplex villa in Lalitpur. Combines Nepalese heritage wood carvings with premium modern comforts.",
+      "price": 620000,
+      "image": "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=800&q=80",
+      "isNew": true,
+      "location": {
+        "address": "Patan Heritage Area",
+        "city": "Lalitpur",
+        "state": "Bagmati",
+        "zip": "44700",
+        "coordinates": {
+          "latitude": 27.6744,
+          "longitude": 85.3238
+        }
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "area": "2,200 sq ft",
+        "type": "Villa",
+        "yearBuilt": 2017
+      },
+      "amenities": ["Wood Carvings", "Courtyard", "Solar Hot Water", "Backup Generator"],
+      "agent": {
+        "name": "John Doe",
+        "phone": "555-123-4567",
+        "email": "john.doe@houselocater.com"
+      }
+    },
+    {
+      "id": 12,
+      "title": "Modern Duplex Penthouse",
+      "description": "A stunning modern duplex with top tier amenities, double height living room ceilings, and private terrace spaces overlooking Lalitpur.",
+      "price": 540000,
+      "image": "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
+      "location": {
+        "address": "Jhamsikhel",
+        "city": "Lalitpur",
+        "state": "Bagmati",
+        "zip": "44700",
+        "coordinates": {
+          "latitude": 27.6792,
+          "longitude": 85.3121
+        }
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 2.5,
+        "area": "1,950 sq ft",
+        "type": "Apartment",
+        "yearBuilt": 2022
+      },
+      "amenities": ["Private Terrace", "Double Ceilings", "Doorman", "Gym Access"],
+      "agent": {
+        "name": "Jane Smith",
+        "phone": "555-987-6543",
+        "email": "jane.smith@houselocater.com"
+      }
+    },
+    {
+      "id": 13,
+      "title": "Suburban Green Villa",
+      "description": "A spacious and beautiful modern villa in a clean residential sector of Butwal. Features a private pool and green gardens.",
+      "price": 380000,
+      "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
+      "location": {
+        "address": "Milanchowk",
+        "city": "Butwal",
+        "state": "Lumbini",
+        "zip": "32907",
+        "coordinates": {
+          "latitude": 27.7006,
+          "longitude": 83.4484
+        }
+      },
+      "details": {
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "area": "3,000 sq ft",
+        "type": "Villa",
+        "yearBuilt": 2021
+      },
+      "amenities": ["Private Pool", "Spacious Garden", "Garage", "Air Conditioning"],
+      "agent": {
+        "name": "Bob Johnson",
+        "phone": "555-555-5555",
+        "email": "bob.johnson@houselocater.com"
+      }
+    },
+    {
+      "id": 14,
+      "title": "Spacious Family Bungalow",
+      "description": "A peaceful bungalow with a wide front porch, brick styling, and spacious bedrooms located close to municipal parks in Butwal.",
+      "price": 260000,
+      "image": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
+      "location": {
+        "address": "Kalikanagar",
+        "city": "Butwal",
+        "state": "Lumbini",
+        "zip": "32907",
+        "coordinates": {
+          "latitude": 27.6892,
+          "longitude": 83.4552
+        }
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "area": "1,800 sq ft",
+        "type": "House",
+        "yearBuilt": 2016
+      },
+      "amenities": ["Front Porch", "Lawn", "Solar Power System", "Car Port"],
+      "agent": {
+        "name": "Bob Johnson",
+        "phone": "555-555-5555",
+        "email": "bob.johnson@houselocater.com"
+      }
+    },
+    {
+      "id": 15,
+      "title": "Eco Safari Lodge",
+      "description": "An eco-friendly wood and stone lodge on the outskirts of Chitwan. Perfect rustic retreat with safari views and organic fruit gardens.",
+      "price": 220000,
+      "image": "https://images.unsplash.com/photo-1546548970-71785318a17b?auto=format&fit=crop&w=800&q=80",
+      "isNew": true,
+      "location": {
+        "address": "Sauraha Buffer Zone",
+        "city": "Chitwan",
+        "state": "Bagmati",
+        "zip": "44200",
+        "coordinates": {
+          "latitude": 27.5794,
+          "longitude": 84.4939
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "area": "1,600 sq ft",
+        "type": "Cottage",
+        "yearBuilt": 2019
+      },
+      "amenities": ["Safari Views", "Organic Garden", "Solar Power", "Rainwater System"],
+      "agent": {
+        "name": "John Doe",
+        "phone": "555-123-4567",
+        "email": "john.doe@houselocater.com"
+      }
+    },
+    {
+      "id": 16,
+      "title": "Chitwan Riverside Villa",
+      "description": "A stunning modern villa located along the banks of the Rapti river in Chitwan. Unmatched jungle sunsets and large private deck.",
+      "price": 435000,
+      "image": "https://images.unsplash.com/photo-1592595896551-12b371d546d5?auto=format&fit=crop&w=800&q=80",
+      "isNew": false,
+      "location": {
+        "address": "Riverside Drive",
+        "city": "Chitwan",
+        "state": "Bagmati",
+        "zip": "44200",
+        "coordinates": {
+          "latitude": 27.5684,
+          "longitude": 84.4820
+        }
+      },
+      "details": {
+        "bedrooms": 4,
+        "bathrooms": 3,
+        "area": "2,900 sq ft",
+        "type": "Villa",
+        "yearBuilt": 2020
+      },
+      "amenities": ["Riverfront Deck", "Sunset Views", "Garage", "Central AC"],
+      "agent": {
+        "name": "John Doe",
+        "phone": "555-123-4567",
+        "email": "john.doe@houselocater.com"
       }
     }
   ]

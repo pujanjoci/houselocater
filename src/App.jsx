@@ -48,7 +48,7 @@ const App = () => {
         <Router basename="/houselocater">
             <div className="flex flex-col min-h-screen">
                 <Header onSearchInitiated={handleLinkClick} />
-                <main className="container mx-auto p-4 flex-grow">
+                <main className="flex-grow">
                     <Routes>
                         <Route path="/" element={
                             isSearchInitiated ? (
@@ -85,11 +85,7 @@ const ConditionalFooter = () => {
     // Check if current path matches any path in the noFooterPaths array
     const shouldDisplayFooter = !noFooterPaths.some(path => location.pathname.startsWith(path));
 
-    return shouldDisplayFooter ? (
-        <footer className="bg-gray-800 text-white py-4">
-            <Footer />
-        </footer>
-    ) : null;
+    return shouldDisplayFooter ? <Footer /> : null;
 };
 
 export default App;

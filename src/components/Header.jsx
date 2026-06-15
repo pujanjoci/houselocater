@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Header = ({ onSearchInitiated, isLoginPage }) => {
+const Header = ({ onSearchInitiated }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const menuRef = useRef(null);
     const navigate = useNavigate();
@@ -28,55 +28,74 @@ const Header = ({ onSearchInitiated, isLoginPage }) => {
         };
     }, [isMenuOpen]);
 
-    const handleLinkClick = (sectionId) => {
-        onSearchInitiated(false);
+    const handleHomeClick = () => {
+        if (onSearchInitiated) {
+            onSearchInitiated(false);
+        }
         setIsMenuOpen(false);
-        navigate(`/#${sectionId}`);
-        setTimeout(() => {
-            document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+        navigate('/');
     };
 
     return (
-        <header className="bg-white text-gray-800 p-4">
-            <nav className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
-                <div className="text-xl font-bold md:col-span-1">
-                    <Link to="/" className='hover:text-gray-400' onClick={() => handleLinkClick('home')}>
-                        House-Locater
+        <header className="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-100 shadow-sm transition-all duration-300">
+            <nav className="container mx-auto px-6 py-4 flex items-center justify-between">
+                {/* Brand Name Logo */}
+                <div className="flex items-center">
+                    <button 
+                        onClick={handleHomeClick} 
+                        className="text-2xl font-serif font-semibold text-slate-800 hover:text-emerald-600 transition focus:outline-none"
+                    >
+                        House Locater
+                    </button>
+                </div>
+
+                {/* Desktop Menu Navigation Links */}
+                <div className="hidden md:flex items-center space-x-8">
+                    <button onClick={handleHomeClick} className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition focus:outline-none">Home</button>
+                    <Link to="/about" className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition">About</Link>
+                    <Link to="/contact" className="text-sm font-semibold text-slate-600 hover:text-emerald-600 transition">Contact</Link>
+                </div>
+
+                {/* Actions Menu */}
+                <div className="flex items-center gap-4">
+                    <Link 
+                        to="/contact" 
+                        className="hidden md:inline-block text-sm font-bold bg-slate-900 text-white hover:bg-emerald-600 px-5 py-2.5 rounded-xl shadow-md transition"
+                    >
+                        Get in Touch
                     </Link>
-                </div>
-                <div className="hidden md:flex space-x-10 justify-center md:col-span-1">
-                    <Link to="/" className="hover:underline hover:text-teal-400"  onClick={() => handleLinkClick('home')}>Home</Link>
-                    <Link to="/" className="hover:underline hover:text-teal-400" onClick={() => handleLinkClick('about')}>About</Link>
-                    <Link to="/" className="hover:underline hover:text-teal-400" onClick={() => handleLinkClick('contact')}>Contact</Link>
-                </div>
-            <div className="relative flex items-center justify-end md:col-span-1">
-                {!isLoginPage && (
-                <div className="hidden md:flex space-x-4">
-                    <button className="border border-transparent hover:border-dotted hover:border-gray-400 rounded-lg focus:outline-none px-2">
-                        <Link to="/login" className="text-gray-600 hover:text-gray-400 hover:underline cursor-pointer">Login</Link>
-                    </button>
-                </div>
-                )}
-                <div className="md:hidden ml-2 absolute top-[-40px] right-1 z-30">
-                    <button onClick={toggleMenu} className="focus:outline-none">
-                        {isMenuOpen ? <FaTimes size={24} style={{ color: 'red' }} /> : <FaBars size={24} style={{ color: 'gray' }} />}
-                    </button>
-                </div>
-            </div>
-            </nav>
-            {isMenuOpen && (
-                <div ref={menuRef} className="md:hidden absolute top-0 left-0 w-full h-full z-20 flex items-center justify-center">
-                    {/* Background blur effect */}
-                    <div className="absolute inset-0 bg-black opacity-80"></div>
                     
-                    {/* Menu content */}
-                    <div className="bg-opacity-35 backdrop-filter backdrop-blur-sm text-white p-4 z-10">
-                        <ul className="flex flex-col space-y-16 items-center">
-                            <li><Link to="/" className="hover:underline" onClick={() => handleLinkClick('home')}>Home</Link></li>
-                            <li><Link to="/" className="hover:underline" onClick={() => handleLinkClick('about')}>About</Link></li>
-                            <li><Link to="/" className="hover:underline" onClick={() => handleLinkClick('contact')}>Contact</Link></li>
-                        </ul>
+                    {/* Mobile Hamburger Trigger */}
+                    <div className="md:hidden">
+                        <button 
+                            onClick={toggleMenu} 
+                            className="p-2 text-slate-600 hover:text-slate-900 focus:outline-none transition rounded-lg hover:bg-slate-50"
+                        >
+                            {isMenuOpen ? <FaTimes size={20} className="text-red-500" /> : <FaBars size={20} />}
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            {/* Mobile Menu Dropdown Panel */}
+            {isMenuOpen && (
+                <div ref={menuRef} className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 shadow-xl z-50 animate-fadeIn">
+                    <div className="p-6 flex flex-col space-y-4">
+                        <button 
+                            onClick={handleHomeClick} 
+                            className="text-left text-base font-bold text-slate-700 hover:text-emerald-600 transition py-2 focus:outline-none"
+                        >
+                            Home
+                        </button>
+                        <Link to="/about" className="text-base font-bold text-slate-700 hover:text-emerald-600 transition py-2" onClick={() => setIsMenuOpen(false)}>About</Link>
+                        <Link to="/contact" className="text-base font-bold text-slate-700 hover:text-emerald-600 transition py-2" onClick={() => setIsMenuOpen(false)}>Contact</Link>
+                        <Link 
+                            to="/contact" 
+                            className="block text-center text-sm font-bold bg-slate-900 text-white hover:bg-emerald-600 py-3 rounded-xl shadow transition mt-2"
+                            onClick={() => setIsMenuOpen(false)}
+                        >
+                            Get in Touch
+                        </Link>
                     </div>
                 </div>
             )}
